@@ -29,6 +29,8 @@
 		181C2A5420088178002814D2 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 181C2A4420088178002814D2 /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		181C2A5520088178002814D2 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 181C2A4720088178002814D2 /* MASViewConstraint.m */; };
 		181C2A5620088178002814D2 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 181C2A4C20088178002814D2 /* NSArray+MASAdditions.m */; };
+		18707286200C3F9A00690BF6 /* MasBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18707285200C3F9A00690BF6 /* MasBasicViewController.m */; };
+		18C0789720103DFC00E8A758 /* ScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C0789620103DFC00E8A758 /* ScrollViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +100,10 @@
 		181C2A4A20088178002814D2 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "MasonryTest/Masonry/NSArray+MASShorthandAdditions.h"; sourceTree = SOURCE_ROOT; };
 		181C2A4B20088178002814D2 /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "MasonryTest/Masonry/View+MASAdditions.h"; sourceTree = SOURCE_ROOT; };
 		181C2A4C20088178002814D2 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MASAdditions.m"; path = "MasonryTest/Masonry/NSArray+MASAdditions.m"; sourceTree = SOURCE_ROOT; };
+		18707284200C3F9A00690BF6 /* MasBasicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasBasicViewController.h; sourceTree = "<group>"; };
+		18707285200C3F9A00690BF6 /* MasBasicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasBasicViewController.m; sourceTree = "<group>"; };
+		18C0789520103DFC00E8A758 /* ScrollViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollViewController.h; sourceTree = "<group>"; };
+		18C0789620103DFC00E8A758 /* ScrollViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +172,10 @@
 				181C29FC20075F5B002814D2 /* main.m */,
 				181C2A2820085967002814D2 /* Test1ViewController.h */,
 				181C2A2920085967002814D2 /* Test1ViewController.m */,
+				18707284200C3F9A00690BF6 /* MasBasicViewController.h */,
+				18707285200C3F9A00690BF6 /* MasBasicViewController.m */,
+				18C0789520103DFC00E8A758 /* ScrollViewController.h */,
+				18C0789620103DFC00E8A758 /* ScrollViewController.m */,
 			);
 			path = MasonryTest;
 			sourceTree = "<group>";
@@ -362,6 +372,8 @@
 				181C2A5020088178002814D2 /* ViewController+MASAdditions.m in Sources */,
 				181C2A4D20088178002814D2 /* MASLayoutConstraint.m in Sources */,
 				181C2A5420088178002814D2 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				18C0789720103DFC00E8A758 /* ScrollViewController.m in Sources */,
+				18707286200C3F9A00690BF6 /* MasBasicViewController.m in Sources */,
 				181C2A2A20085967002814D2 /* Test1ViewController.m in Sources */,
 				181C2A2420085194002814D2 /* HomeViewController.m in Sources */,
 				181C29EF20075F5B002814D2 /* AppDelegate.m in Sources */,

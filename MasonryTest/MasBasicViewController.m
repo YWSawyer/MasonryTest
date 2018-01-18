@@ -7,6 +7,7 @@
 //
 
 #import "MasBasicViewController.h"
+#import "Masonry.h"
 
 @interface MasBasicViewController ()
 
@@ -17,6 +18,44 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.view.backgroundColor = [UIColor whiteColor];
+    self.navigationController.navigationBar.translucent = NO;
+    UIView *greenView = [UIView new];
+    greenView.backgroundColor = [UIColor greenColor];
+    UIView *blueView  = [UIView new];
+    blueView.backgroundColor = [UIColor blueColor];
+    UIView *grayView  = [UIView new];
+    grayView.backgroundColor = [UIColor grayColor];
+    
+    [self.view addSubview:greenView];
+    [self.view addSubview:blueView];
+    [self.view addSubview:grayView];
+    
+    //
+    UIView *superView = self.view;
+    
+    [greenView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(superView).with.offset(20);
+        make.leading.equalTo(superView).with.offset(20);
+        make.width.mas_equalTo(blueView);
+    }];
+    
+    [blueView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.top.equalTo(greenView);
+        make.right.equalTo(superView.mas_right).offset(-20);
+        make.left.equalTo(greenView.mas_right).offset(20);
+    }];
+    
+    [grayView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(superView).offset(20);
+        make.right.equalTo(superView).offset(-20);
+        make.top.equalTo(greenView.mas_bottom).offset(20);
+        make.bottom.equalTo(superView.mas_bottom).offset(-20);
+        make.height.equalTo(greenView.mas_height);
+        make.height.equalTo(blueView.mas_height);
+    }];
+    
 }
 
 - (void)didReceiveMemoryWarning {
